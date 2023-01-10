@@ -19,7 +19,7 @@
 
 OWS CustomApi Template is a minimal base template for adding an custom microservice api to OWS, It's preconfigured for Swagger and Logging
 
-### Add Custom Api To OWS
+### Adding Custom Api Template To OWS
 
 1. Download the repo
 2. Add the folder OWSCustomApi to the src folder inside OWS
@@ -28,9 +28,10 @@ OWS CustomApi Template is a minimal base template for adding an custom microserv
 5. Click on Add -> Existing Project...
 6. Navigate to the OWS/src folder and select OWSCustomApi/OWSCustomApi.csproj
 
-### Add Custom Api To Docker
+### Adding Custom Api Template To Docker
 
 Follow The Official Tutorial On Youtube
+
 [OWS 2 - Creating your own Custom API's](https://www.youtube.com/watch?v=9adrfV5He6I)
 
 ![screenshot](https://i.imgur.com/rvEfvev.gif)
