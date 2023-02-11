@@ -2,11 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>9805f064-639a-42e6-9e13-a99860a79187</UserSecretsId>
+    <UserSecretsId>69dc8dd2-6511-4849-ad79-570c0c1cfc99</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,6 +30,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OWSShared\OWSShared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="OWSCustomApi.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

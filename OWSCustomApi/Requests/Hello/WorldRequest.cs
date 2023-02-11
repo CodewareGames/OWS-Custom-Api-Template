@@ -1,7 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using OWSShared.Interfaces;
+using Serilog;
 
-namespace OWSCustomApi.Requests.Test
+namespace OWSCustomApi.Requests.Hello
 {
     public class WorldRequest : IRequestHandler<WorldRequest, IActionResult>, IRequest
     {
@@ -17,7 +21,7 @@ namespace OWSCustomApi.Requests.Test
 
         public async Task<IActionResult> Handle()
         {
-            logger.LogInformation("Hello World Request Handled");
+            logger.Information("Hello World Request Handled");
             return new OkObjectResult("Hello World!");
         }
     }
